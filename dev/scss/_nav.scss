@@ -1,0 +1,147 @@
+.hamburger-menu {
+	/* 
+	*** NOTE: Delete the next lines of code and create a custom
+	Hamburger button as per the instructions... */
+	width: 48px;
+	height: 48px;
+	z-index: 1;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.hamburger-menu-content {
+	position: relative;
+}
+
+/* style for the basement design for hamburger menu bars */
+.hamburger-menu-content .bar,
+.bar::before,
+.bar::after {
+	display: inline-block;
+	transition: all 0.4s;
+	position: relative;
+	height: 3px;
+	border-radius: 2px;
+	background: rgb(255, 255, 255);
+	width: 100%;
+}
+
+.hamburger-menu-content .bar::before {
+	left: 0px;
+	top: 8px;
+	content: "";
+	position: absolute;
+	width: 100%;
+}
+
+.hamburger-menu-content .bar::after {
+	left: 0px;
+	top: -8px;
+	content: "";
+	position: absolute;
+	width: 100%;
+}
+
+/* make the middle bar invisible when hamburger menu is active */
+.show .hamburger-menu-content .bar {
+	background-color: transparent;
+}
+
+/* rotate the top and bottom bar for making cross mark */
+.show .hamburger-menu-content .bar::before {
+	left: 0px;
+	top: 0px;
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: rotate(45deg);
+}
+
+.show .hamburger-menu-content .bar::after {
+	left: 0px;
+	top: 0px;
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: rotate(-45deg);
+}
+
+#main-navigation {
+	display: flex;
+	right: 30px;
+	top: 75px;
+	flex-wrap: wrap;
+	position: absolute;
+	text-align: center;
+	background-color: rgb(247, 240, 202);
+	visibility: hidden;
+	transform: scale(0);
+}
+
+#main-navigation ul {
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+
+#main-navigation ul.header-contact {
+	display: none;
+}
+
+#main-navigation ul.desktop-alt-menu {
+	display: none;
+}
+
+#main-navigation li {
+	padding: 20px;
+	border: 1px solid grey;
+}
+
+#main-navigation li a {
+	text-decoration: none;
+	color: black;
+	font-size: 0.9rem;
+}
+
+#main-navigation.activated {
+	animation-name: fadeout;
+	animation-duration: 1.5s;
+	transition: transform ease-out, visibility 1.5s;
+}
+
+.show #main-navigation {
+	animation-name: fadein;
+	animation-duration: 1.5s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+	visibility: visible;
+	transform: scale(1);
+}
+
+.sr-only {
+	position: absolute;
+	left: -1px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+	#main-navigation ul.header-contact {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#main-navigation ul li.desktop-hide {
+		display: none;
+	}
+
+	#main-navigation ul.desktop-alt-menu {
+		display: flex;
+		flex-direction: column;
+	}
+}

@@ -21,8 +21,15 @@
 					<!-- Icon - Vulcan -->
 					<object data="./images/logo-white-vulcan.svg" height="40.88"></object>
 					<!-- <img src="images/vulcan-logo.png" alt="Vulcan Logo" class="logo" /> -->
-					<nav>
-						<ul>
+					<button class="hamburger-menu" id="btn-menu">
+						<span class="hamburger-menu-content" tabindex="-1">
+							<span class="sr-only">Menu</span>
+							<span class="bar" id="bar"></span>
+						</span>
+
+					</button>
+					<nav id="main-navigation">
+						<ul class="desktop-alt-menu">
 							<li><a href="#0">Install Map</a></li>
 							<li><a href="#0">Product Literature</a></li>
 						</ul>
@@ -37,13 +44,15 @@
 								>
 							</li>
 						</ul>
-						<ul>
+						<ul class="main-menu">
 							<li><a href="#0">About</a></li>
 							<li><a href="#0">Products</a></li>
 							<li><a href="#0">Services</a></li>
 							<li><a href="#0">Parts</a></li>
 							<li><a href="#0">News</a></li>
 							<li><a href="#0">Contact</a></li>
+							<li class="desktop-hide"><a href="#0">Installation Map</a></li>
+							<li class="desktop-hide"><a href="#0">Product Literature</a></li>
 						</ul>
 					</nav>
 				</div>
