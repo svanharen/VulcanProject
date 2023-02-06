@@ -1,13 +1,23 @@
 .slide-show {
 	max-width: 1000px;
-	position: relative;
+	position: absolute;
 	margin: auto;
 	z-index: -100;
+    top:0;
+    left:0;
+    
 }
 
 .slide {
 	display: none; /*Hide slide by default*/
 	transition: ease-in-out;
+    height: 620px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .dot {
