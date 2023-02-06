@@ -1,0 +1,19 @@
+@use "variables" as *;
+
+footer{
+    background: $text-color-light;
+    text-align: center;
+    color: $text-color-white;
+    text-transform: uppercase;
+    font-size: 14px;
+    .sns{
+        width: 20px;
+        height: auto;
+    }
+
+    li{
+        display:inline-block;
+        margin: 10px;    
+    }
+}
+
