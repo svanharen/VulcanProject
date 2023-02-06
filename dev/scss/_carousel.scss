@@ -50,3 +50,41 @@
 		opacity: 1;
 	}
 }
+
+//Carousel Content 
+
+.caption-area {
+    color: #ffff;
+    position: relative;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    padding: 70px 0 100px;
+    text-align: center;
+    z-index: -100;
+}
+
+.view-button-list {
+    margin: 0;
+    text-align: center;
+}
+
+.view-button {
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 11px 10px 10px;
+    color:#ffff;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-color: #ffff;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 0 19px;
+    vertical-align: middle;
+
+    
+}
