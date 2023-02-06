@@ -50,3 +50,43 @@ body.addEventListener("transitionend", function () {
 		body.classList.remove("animating");
 	}
 });
+
+//Carousel JS
+console.log("js working");
+var slideIndex = 1;
+var timeout;
+
+showSlides(slideIndex);
+
+// Thumbnail image controls
+function currentSlide(n) {
+	clearTimeout(timeout);
+	showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+	var i;
+	var slides = document.getElementsByClassName("slide");
+	var dots = document.getElementsByClassName("dot");
+
+	if (n == undefined) {
+		n = ++slideIndex;
+	}
+	if (n > slides.length) {
+		slideIndex = 1;
+	}
+	if (n < 1) {
+		slideIndex = sides.length;
+	}
+
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+	}
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	}
+
+	slides[slideIndex - 1].style.display = "block";
+	dots[slideIndex - 1].className += " active";
+	timeout = setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
