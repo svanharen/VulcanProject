@@ -1,0 +1,13 @@
+@use "variables" as *;
+
+footer{
+    background: $text-color-light;
+    text-align: center;
+    color: $text-color-white;
+    text-transform: uppercase;
+
+    .sns{
+        width: 20px;
+        height: auto;
+    }
+}
