@@ -7,3 +7,9 @@
 @use "carousel";
 @use "nav";
 @use "header";
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+}

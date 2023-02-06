@@ -1,38 +1,42 @@
 .slide-show {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+	z-index: -100;
 }
 
 .slide {
-    display: none; /*Hide slide by default*/
+	display: none; /*Hide slide by default*/
+	transition: ease-in-out;
 }
 
 .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #d3101044;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 1s ease-in-out;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 3s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #d3101044;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 1s ease-in-out;
+}
 
+.active,
+.dot:hover {
+	background-color: #717171;
+}
 
+/* Fading animation */
+.fade {
+	animation-name: fade;
+	animation-duration: 3s;
+}
 
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
