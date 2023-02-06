@@ -115,17 +115,17 @@
 	padding-left: 10px;
 }
 
-#main-navigation.activated {
-	animation-name: fadeout;
-	animation-duration: 1.5s;
-	transition: transform ease-out, visibility 1.5s;
-}
+// #main-navigation.activated {
+// 	animation-name: fadeout;
+// 	animation-duration: 1.5s;
+// 	transition: transform ease-out, visibility 1.5s;
+// }
 
 .show #main-navigation {
-	animation-name: fadein;
-	animation-duration: 1.5s;
-	animation-timing-function: ease;
-	animation-fill-mode: forwards;
+	// animation-name: fadein;
+	// animation-duration: 1.5s;
+	// animation-timing-function: ease;
+	// animation-fill-mode: forwards;
 	visibility: visible;
 	transform: scale(1);
 }
