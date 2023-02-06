@@ -1,18 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
-
+//changed this page 02-06-2023
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
 // Fonts
 $body-font: "Roboto", sans-serif;
-$heading-font: "Roboto", sans-serif;
-
+$heading-font: "Roboto Condensed", sans-serif;
 // Typographic Defualts
 $line-height: 1.4;
-
 // Text Fonts
 $text-color: #154a66;
 $text-color-light: #009ddc;
 $text-color-white: #ffffff;
 $text-color-grey: #252525;
 $text-color-light-grey: #616161;
-
 // Background Colors
-$bg-header: rgba(34, 34, 34, 0.8);
+$bg-header: #252525;
