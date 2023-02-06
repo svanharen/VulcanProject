@@ -1,5 +1,11 @@
 @use "variables" as *;
 
 header {
-	background-color: $bg-header;
+	background: $bg-header;
+}
+.container {
+	background: $bg-header;
+}
+.container-contents {
+	padding-left: 10px;
 }

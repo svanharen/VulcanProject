@@ -6,14 +6,3 @@
 @use "typography";
 @use "nav";
 @use "header";
-
-.header-contact {
-	display: none;
-}
-
-@media screen and (min-width: 768px) {
-	.header-contact {
-		display: flex;
-		flex-direction: column;
-	}
-}

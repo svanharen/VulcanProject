@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .hamburger-menu {
 	/* 
 	*** NOTE: Delete the next lines of code and create a custom
@@ -7,6 +9,7 @@
 	z-index: 1;
 	background-color: transparent;
 	border-color: transparent;
+	float: right;
 }
 
 .hamburger-menu-content {
@@ -68,14 +71,13 @@
 
 #main-navigation {
 	display: flex;
-	right: 30px;
-	top: 75px;
 	flex-wrap: wrap;
 	position: absolute;
 	text-align: center;
-	background-color: rgb(247, 240, 202);
 	visibility: hidden;
 	transform: scale(0);
+	width: 100%;
+	background: $bg-header;
 }
 
 #main-navigation ul {
@@ -96,13 +98,19 @@
 }
 
 #main-navigation li {
-	padding: 20px;
-	border: 1px solid grey;
+	padding: 5px;
+	font-family: $heading-font;
+
+	/* border: 1px solid grey; */
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	text-transform: uppercase;
 }
 
 #main-navigation li a {
 	text-decoration: none;
-	color: black;
+	color: $text-color-white;
 	font-size: 0.9rem;
 }
 
@@ -131,6 +139,19 @@
 }
 
 @media screen and (min-width: 768px) {
+	#main-navigation {
+		background-color: white;
+		visibility: visible;
+		height: auto;
+		position: static;
+		transform: scale(1);
+	}
+	#main-navigation ul {
+		display: flex;
+	}
+	.hamburger-menu {
+		display: none;
+	}
 	#main-navigation ul.header-contact {
 		display: flex;
 		flex-direction: column;
