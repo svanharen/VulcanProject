@@ -10,6 +10,7 @@
 @use "footer";
 @use "location-contact";
 @use "custom";
+@use "productadvisor";
 
 .wrapper {
 	display: flex;
@@ -17,6 +18,6 @@
 	gap: 0;
 }
 
-main{
+main {
 	background-color: #ffff;
 }
