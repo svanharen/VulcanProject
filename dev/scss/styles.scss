@@ -8,7 +8,6 @@
 @use "nav";
 @use "header";
 @use "footer";
-@use "gallery";
 @use "location-contact";
 @use "custom";
 
@@ -16,4 +15,8 @@
 	display: flex;
 	flex-direction: column;
 	gap: 0;
+}
+
+main{
+	background-color: #ffff;
 }
