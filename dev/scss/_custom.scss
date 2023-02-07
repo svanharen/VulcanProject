@@ -24,6 +24,10 @@
 		margin: 0 auto;
 		padding: 0 32px 14px;
 	}
+
+	a {
+		display: none;
+	}
 }
 
 .gallery-item {
@@ -47,10 +51,6 @@
 	// 	grid-area: txt;
 	// 	width: 40%;
 	// }
-}
-
-a {
-	display: none;
 }
 
 .custom-section:before {
