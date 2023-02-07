@@ -1,6 +1,7 @@
 @use "variables" as *;
 
 .location-contact{
+
     text-decoration: none;
     text-align: center;
     background-color: $text-color;
@@ -15,13 +16,16 @@
         color: $text-color-light-grey;
 
         img{
+            object-fit: cover;
             width: 100%;
+            height: 334px;
         }
         button{
             color: $text-color-light-grey;
             border: 2px solid $text-color-light-grey;
         }
         article{
+            display: inline-block;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -38,13 +42,5 @@
             border: 2px solid $text-color-white;
         }
     }
-    .contact-us::after{
-        position: absolute;
-        left:0px;
-        width: 100%;
-        height: 100%;
-        content: "";
-        background: url("../images/wave-blue-light.png");
-        background-repeat: no-repeat;
-    }
+  
 }
