@@ -25,15 +25,17 @@
 	height: 15px;
 	width: 15px;
 	margin: 0 2px;
-	background-color: #d3101044;
+	background-color: #fefefe;
 	border-radius: 50%;
 	display: inline-block;
 	transition: background-color 1s ease-in-out;
+    max-width: 10px;
+    max-height: 10px;
 }
 
 .active,
 .dot:hover {
-	background-color: #717171;
+	background-color: #399de0;
 }
 
 /* Fading animation */
@@ -56,10 +58,6 @@
 .caption-area {
     color: #ffff;
     position: relative;
-    left:0;
-    top:0;
-    right:0;
-    bottom:0;
     padding: 70px 0 100px;
     text-align: center;
     z-index: -100;
@@ -68,6 +66,8 @@
 .view-button-list {
     margin: 0;
     text-align: center;
+    padding-left: 0;
+    
 }
 
 .view-button {
@@ -83,8 +83,22 @@
     border-color: #ffff;
     text-decoration: none;
     cursor: pointer;
-    margin: 0 0 19px;
-    vertical-align: middle;
+    margin: 0 0 19px 0;
+      
+}
 
-    
+.paging {
+    display: flex;
+    position: relative;
+    z-index: 10;
+}
+
+.carousel-dots{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 60px;
+    justify-content: center;
+    opacity: 0.8;
 }
