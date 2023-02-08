@@ -76,8 +76,8 @@
 				</div>
 				<div>
 					<ul class="view-button-list">
-						<li><a class="view-button" href="#0">VIEW PRODUCTS</a></li>
-						<li><a class="view-button" href="#0">VIEW SERVICES</a></li>
+						<li><button class="view-button" href="#0">VIEW PRODUCTS</button></li>
+						<li><button class="view-button" href="#0">VIEW SERVICES</button></li>
 					</ul>
 				</div>
 			</div>
@@ -160,13 +160,15 @@
 					</section>
 				</div>
 
-				<section>
-					<h2 class="h2-light">Product Advisor</h2>
-					<p>Find your project’s perfect fit.</p>
+				<section class="product-advisor">
+					<div class="pr-adv-section-txt">
+						<h2 class="h2-light">Product Advisor</h2>
+						<p>Find your project’s perfect fit.</p>
+					</div>
 
 					<!--Will be a form-->
 					<form action="#0" method="post">
-						<label for="product-type">PRODUCT TYPE</label>
+						<label for="product-type">Product Type</label>
 						<select
 							name="product-type"
 							id="product-type"
@@ -175,7 +177,7 @@
 							<option value="">PLACE HOLDER</option>
 						</select>
 
-						<label for="screen-location">SCREEN LOCATION</label>
+						<label for="screen-location">Screen Location</label>
 						<select
 							name="screen-location"
 							id="screen-location"
@@ -184,13 +186,13 @@
 							<option value="">PLACE HOLDER</option>
 						</select>
 
-						<label for="flow-type">FLOW TYPE</label>
+						<label for="flow-type">Flow Type</label>
 						<select name="flow-type" id="flow-type" aria-placeholder="Select">
 							<option value="" disabled selected>Select</option>
 							<option value="">PLACE HOLDER</option>
 						</select>
 
-						<label for="channel-depth">CHANNEL DEPTH</label>
+						<label for="channel-depth">Channel Depth</label>
 						<select
 							name="channel-depth"
 							id="channel-depth"
@@ -199,7 +201,7 @@
 							<option value="">PLACE HOLDER</option>
 						</select>
 
-						<label for="channel-width">CHANNEL WIDTH</label>
+						<label for="channel-width">Channel Width</label>
 						<select
 							name="channel-width"
 							id="channel-width"
@@ -211,20 +213,23 @@
 							type="submit"
 							id="submit"
 							value="FIND MY PRODUCT"
-							class="button"
+							class="submit-button"
 							aria-label="Submit FIND MY PRODUCT" />
 					</form>
 				</section>
 
-				<div>
-					<img src="./images/bg-section-about-us.jpg" />
-					<h2>Delivering clean safe water since 1975. Refreshing indeed.</h2>
-					<p>
-						Vulcan wastewater screening equipment has played a vital role in
-						protecting the water supply of more than 900 cities and communities
-						throughout the world.
-					</p>
-					<button>About Us</button>
+				<div class="about-us">
+					<!-- <img src="./images/bg-section-about-us.jpg" /> -->
+					<div class="about-us-section-text">
+						<h2>Delivering clean safe water since 1975. Refreshing indeed.</h2>
+						<p>
+							Vulcan wastewater screening equipment has played a vital role in
+							protecting the water supply of more than 900 cities and communities
+							throughout the world.
+						</p>
+					</div>
+
+					<button class="button-light">About Us</button>
 				</div>
 
 				<section class="">
@@ -237,22 +242,28 @@
 						allowfullscreen></iframe>
 				</section>
 				<section>
-					<form action="#0" method="post">
-						<label for="sign-up"
-							>Stay in the know. Sign up for our newsletter</label
+					<form action="#0" method="post" class="sign-up">
+						<div class="sign-up-container">
+							<label for="sign-up"
+							>Stay in the know. Sign up for our newsletter.</label
 						>
-						<input
+						<div class="sign-up-input">
+							<input
 							type="email"
 							name="sign-up"
 							id="sign-up"
-							placeholder="Enter your Email"
-							aria-label="Enter your Email" />
+							placeholder="Enter your email"
+							aria-label="Enter your email" />
 						<input
 							type="submit"
 							id="submit"
 							value="Submit"
-							class="button"
+							class="submit-button"
 							aria-label="Submit" />
+						</div>
+
+						</div>
+
 					</form>
 				</section>
 				<div class="location-contact">
@@ -260,14 +271,13 @@
 						<img src="./images/map.jpg" alt="map">
 						<article>
 							<h2>Installed in <br> a city near you</h2>
-							<button>Find a vulcan install</button>
+							<button class="button-dark dsk-button">Find a vulcan install</button>
 						</article>
 
 					</div>
 					<div class="contact-us">
-
 							<h2>Ready to spec Vulcan <br> for your project</h2>
-							<button>Contact Us</button>
+							<button class="button-light dsk-button">Contact Us</button>
 
 					</div>
 

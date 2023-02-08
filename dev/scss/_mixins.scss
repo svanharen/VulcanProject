@@ -1,0 +1,19 @@
+@mixin label-font($family, $weight) {
+	font-family: $family;
+	font-weight: $weight;
+}
+
+@mixin button-style($border, $weight, $color, $bg-color, $hv-bg, $hv-color){
+	border: $border;
+	font-weight: $weight;
+	color: $color;
+	background-color: $bg-color;
+	padding: 10px 25px 10px 25px,;
+	text-transform: uppercase;
+	cursor: pointer;
+	&:hover{
+		background-color: $hv-bg;
+		color:$hv-color;
+		transition: 0.5s;
+	}
+}

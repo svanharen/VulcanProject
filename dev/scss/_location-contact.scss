@@ -5,12 +5,7 @@
     text-decoration: none;
     text-align: center;
     background-color: $text-color;
-    button {
-        font-size: 120%;
-        font-weight: bold;
-        background: transparent;
-        padding: 20px;
-    }
+
     .location-content{
         position: relative;
         color: $text-color-light-grey;
@@ -20,10 +15,7 @@
             width: 100%;
             height: 334px;
         }
-        button{
-            color: $text-color-light-grey;
-            border: 2px solid $text-color-light-grey;
-        }
+
         article{
             display: inline-block;
             position: absolute;
@@ -36,11 +28,7 @@
         background-color: $text-color;
         color: $text-color-white;
         margin: 50px;
-        button{
-            margin-top: 30px;
-            color: $text-color-white;
-            border: 2px solid $text-color-white;
-        }
+
     }
 }
 @media screen and (min-width: 768px) {

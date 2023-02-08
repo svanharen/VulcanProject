@@ -10,6 +10,10 @@
 @use "footer";
 @use "location-contact";
 @use "custom";
+@use "productadvisor";
+@use "about-us";
+@use "buttons" as *;
+@use "sign-up";
 
 .wrapper {
 	display: flex;
@@ -17,6 +21,6 @@
 	gap: 0;
 }
 
-main{
+main {
 	background-color: #ffff;
 }
