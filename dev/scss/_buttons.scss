@@ -1,14 +1,59 @@
 @use "mixins" as *;
 @use "variables" as *;
 
-.button-dark{
-
+.button-dark {
+  @include button-style(
+    $border: 1px solid $text-color-light-grey,
+    $weight: 700,
+    $bg-color: transparent,
+    $color: $text-color-light-grey,
+    $hv-color:$text-color-white,
+    $hv-bg:$text-color-light-grey,
+  );
 }
-
-.button-light{
-    @include button-style($border: 1px solid $text-color-white , 
-                          $weight: bold, 
-                          $bg-color: transparent, 
-                          $color:$text-color-white, 
-                          $padding:11px 10px 10px)
+.button-light {
+  @include button-style(
+    $bg-color: transparent,
+    $weight: 700,
+    $border: 1px solid $text-color-white,
+    $color: $text-color-white,
+    $hv-color:$text-color-light,
+    $hv-bg:$text-color-white,
+  );
+}
+.view-button {
+    margin-top: 20px;
+  @include button-style(
+    $border: 1px solid $text-color-white,
+    $weight: normal,
+    $color: $text-color-white,
+    $bg-color: transparent,
+    $hv-color:$text-color-light,
+    $hv-bg:$text-color-white
+  );
+}
+.submit-button{
+    @include button-style(
+        $border: none,
+        $color: $text-color-white,
+        $weight: 700,
+        $bg-color: $text-color-light,
+        $hv-color:$text-color-white,
+        $hv-bg:$text-color-light-grey
+      );
+}
+@media screen and (min-width: 768px) {
+  .dsk-button {
+    @include button-style(
+      $border: none,
+      $color: $text-color-white,
+      $weight: 700,
+      $bg-color: $text-color-light,
+      $hv-color:$text-color-white,
+      $hv-bg:$text-color-grey,
+    )
+  }
+  .view-button{
+    font-weight: 700;
+}
 }
