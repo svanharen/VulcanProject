@@ -1,5 +1,6 @@
 @use "variables" as *;
 @use "typography";
+
 .about-us {
 	background-image: url("../images/bg-section-about-us.jpg");
 	background-repeat: none;
@@ -24,5 +25,6 @@
 		p {
 			padding: 0 32px 14px;
 		}
+
 	}
 }

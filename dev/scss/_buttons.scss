@@ -1,0 +1,14 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+.button-dark{
+
+}
+
+.button-light{
+    @include button-style($border: 1px solid $text-color-white , 
+                          $weight: bold, 
+                          $bg-color: transparent, 
+                          $color:$text-color-white, 
+                          $padding:11px 10px 10px)
+}

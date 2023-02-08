@@ -12,6 +12,7 @@
 @use "custom";
 @use "productadvisor";
 @use "about-us";
+@use "buttons" as *;
 
 .wrapper {
 	display: flex;

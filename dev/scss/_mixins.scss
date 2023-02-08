@@ -2,3 +2,11 @@
 	font-family: $family;
 	font-weight: $weight;
 }
+
+@mixin button-style($border, $weight, $bg-color, $color, $padding){
+	border: $border;
+	font-weight: $weight;
+	background-color: $bg-color;
+	color: $color;
+	padding: $padding;
+}
