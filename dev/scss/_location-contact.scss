@@ -35,6 +35,9 @@
     .location-contact {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        align-items: center;
+        grid-auto-flow: column;
+        direction: rtl;
     }
 
   }
