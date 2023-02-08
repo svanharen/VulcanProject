@@ -1,4 +1,4 @@
-//changed this page 02-06-2023
+@use "sass:color";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
 // Fonts
 $body-font: "Roboto", sans-serif;
@@ -15,3 +15,8 @@ $text-color-grey: #252525;
 $text-color-light-grey: #616161;
 // Background Colors
 $bg-header: #252525;
+
+// Colors
+$sign-up-color: #154a66;
+$sign-up-color-light: color.scale($sign-up-color, $lightness: 75%);
+// $brand-color-dark: color.scale($brand-color, $lightness: -30%);
