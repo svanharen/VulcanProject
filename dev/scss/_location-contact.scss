@@ -5,6 +5,10 @@
     text-decoration: none;
     text-align: center;
     background-color: $text-color;
+    // height: 500px;
+    button{
+        margin: 20px;
+    }
 
     .location-content{
         position: relative;
@@ -24,11 +28,23 @@
             left: 50%;
             transform: translate(-50%,-50%);
         }
+
     }
     .contact-us{
+        position: relative;
         background-color: $text-color;
         color: $text-color-white;
-        margin: 50px;
+        
+        height: 500px;
+
+        article{
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 100%;
+        }
 
     }
 }
@@ -41,5 +57,4 @@
         direction: rtl;
         min-height: 300px;
     }
-
   }

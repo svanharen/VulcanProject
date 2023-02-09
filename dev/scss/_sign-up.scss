@@ -8,7 +8,7 @@
 
 	.sign-up-container {
 		display: grid;
-		grid-template-columns: 1fr;
+		// grid-template-columns: 1fr;
 		text-align: center;
 		margin-right: -10px;
 		margin-left: -10px;
@@ -41,9 +41,20 @@
 				color: #504f4f;
 			}
 
-			input[type="submit"] {
-				// wait for yuko's button.
-			}
 		}
 	}
 }
+@media (min-width: 767px) {
+	.sign-up-container{
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.sign-up-label{
+		grid-column: 1/1;
+	}
+	.sign-up-input{
+		grid-column: 2/2;
+	}
+}
+
+
