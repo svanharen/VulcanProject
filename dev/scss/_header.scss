@@ -10,3 +10,11 @@ header {
 object {
 	padding-left: 10px;
 }
+
+@media screen and (min-width: 768px) {
+	header {
+		background-color: transparent;
+	}
+	
+}
+	
