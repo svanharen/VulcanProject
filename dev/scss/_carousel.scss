@@ -57,18 +57,19 @@
 
 .caption-area {
     color: #ffff;
-    
     padding: 150px 0 10px;
     width: 100%;
-    max-width: 100%;
+    max-width: auto;
     text-align: center;
     z-index: 100;
     display: inline-block;
     vertical-align: middle;
+    position: relative;
+   
 }
 
 .caption-text {
-    width: 960px;
+    width: auto;
     margin-right: auto;
     margin-left: auto;
     padding-left: 10px;
@@ -76,8 +77,8 @@
 }
 
 .caption-text h1{
-    font-size: 40px;
-    line-height: 46px;
+    font-size: 32px;
+    line-height: 42px;
     margin: 0 0 30px;
 }
 
@@ -125,6 +126,14 @@
     }
     .slide-show{
         right:0;
+    }
+
+    .caption-text{
+        max-width: 960px;
+    }
+    .caption-text h1{
+        font-size: 40px;
+        line-height: 46px;
     }
 }
 
