@@ -1,5 +1,5 @@
 .slide-show {
-	max-width: 1000px;
+	max-width: auto;
 	position: absolute;
 	margin: auto;
 	z-index: -100;
@@ -25,7 +25,7 @@
 	height: 15px;
 	width: 15px;
 	margin: 0 2px;
-	background-color: #fefefe;
+	background-color: #655d5d80;
 	border-radius: 50%;
 	display: inline-block;
 	transition: background-color 1s ease-in-out;
@@ -69,8 +69,6 @@
     padding-left: 0;
     
 }
-
-
 
 .paging {
     display: flex;
