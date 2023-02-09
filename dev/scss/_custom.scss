@@ -7,8 +7,13 @@
 	text-align: center;
 	// margin: 10px;
 	margin-bottom: 120px;
-	padding-top: 100px;
+	padding-top: 20px;
 	position: relative;
+
+	hr {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
 	.custom-section-txt {
 		max-width: 820px;
 		margin: 0 auto;
@@ -34,6 +39,10 @@
 			margin-top: 10px;
 			margin-bottom: 10px;
 			gap: 10px;
+
+			a {
+				display: none;
+			}
 		}
 	}
 }
@@ -48,6 +57,7 @@
 	position: absolute;
 	top: -80px;
 	left: 0;
+	z-index: -1;
 }
 
 @media (min-width: 768px) {
