@@ -80,6 +80,9 @@
 			font-family: $body-font;
 			font-size: 500;
 		}
+		div:first-of-type select {
+					background-color: $form-gray-active;
+		}
 	}
 	input {
 		background-color: $text-color-light;

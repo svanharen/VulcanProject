@@ -57,17 +57,50 @@
 
 .caption-area {
     color: #ffff;
-    position: relative;
-    padding: 70px 0 100px;
+    padding: 150px 0 10px;
+    width: 100%;
+    max-width: auto;
     text-align: center;
     z-index: -100;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+   
+}
+
+.caption-text {
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.caption-text h1{
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0 0 30px;
+}
+
+.view-buttons{
+    margin: 0px;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
 }
 
 .view-button-list {
     margin: 0;
     text-align: center;
     padding-left: 0;
-    
+    width: 100%;
+}
+
+.view-button-list li {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .paging {
@@ -94,6 +127,14 @@
     }
     .slide-show{
         right:0;
+    }
+
+    .caption-text{
+        max-width: 960px;
+    }
+    .caption-text h1{
+        font-size: 40px;
+        line-height: 46px;
     }
 }
 
