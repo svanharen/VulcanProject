@@ -5,7 +5,7 @@
 	z-index: -100;
     top:0;
     left:0;
-    
+       
 }
 
 .slide {
@@ -16,7 +16,7 @@
 
 .slide img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -25,7 +25,7 @@
 	height: 15px;
 	width: 15px;
 	margin: 0 2px;
-	background-color: #655d5d80;
+	background-color: white;
 	border-radius: 50%;
 	display: inline-block;
 	transition: background-color 1s ease-in-out;
@@ -85,3 +85,14 @@
     justify-content: center;
     opacity: 0.8;
 }
+
+@media screen and (min-width: 768px) {
+
+    .slide-img{
+        height: auto;
+    }
+    .slide-show{
+        right:0;
+    }
+}
+
