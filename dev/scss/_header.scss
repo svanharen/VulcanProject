@@ -6,14 +6,34 @@ header {
 	width: 100%;
 	opacity: 0.86;
 }
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
 
 object {
 	padding-left: 10px;
 }
 
+.user-bar {
+	display: none;
+}
+
 @media screen and (min-width: 768px) {
 	header {
 		background-color: transparent;
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+	}
+	.container {
+		width: 740px;
+	}
+	.user-bar{
+		display: inline-block;
 	}
 	
 }
