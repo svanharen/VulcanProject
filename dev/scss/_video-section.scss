@@ -1,0 +1,31 @@
+@use "variables" as *;
+@use "typography";
+.video-section {
+	background-color: $text-color-light;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 65px;
+
+	.embed-container {
+		position: relative;
+		// background-color: $text-color;
+		display: flex;
+		justify-content: center;
+		// padding-bottom: 59.25%;
+		// height: 0;
+		overflow: fit-content;
+		// max-width: 100%;
+		border: 15px solid $text-color;
+		background-color: green;
+		// width: 60%;
+		height: 30vw;
+
+		iframe {
+			padding: none;
+			width: 95%;
+			// height: 100px;
+		}
+	}
+}
