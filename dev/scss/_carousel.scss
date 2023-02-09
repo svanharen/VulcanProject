@@ -5,7 +5,7 @@
 	z-index: -100;
     top:0;
     left:0;
-    
+       
 }
 
 .slide {
@@ -25,7 +25,7 @@
 	height: 15px;
 	width: 15px;
 	margin: 0 2px;
-	background-color: #655d5d80;
+	background-color: white;
 	border-radius: 50%;
 	display: inline-block;
 	transition: background-color 1s ease-in-out;
@@ -90,6 +90,9 @@
 
     .slide-img{
         height: auto;
+    }
+    .slide-show{
+        right:0;
     }
 }
 
