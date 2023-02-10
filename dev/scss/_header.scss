@@ -91,11 +91,29 @@ object {
 		text-decoration: none;
 		text-transform: uppercase;
 	}
+	.vulcan-logo{
+		display: flex;
+		justify-content: space-around;
+		padding-bottom: 10px;
+	}
+	
+}
+
+@media screen and (min-width: 768px) {
+	#vulcan-logo-svg{
+		width: 160px;
+		height: 66px;
+	}
 }
 
 @media screen and (min-width: 1024px) {
 	.container {
 		width: 960px;
+	}
+
+	#vulcan-logo-svg{
+		width: 213px;
+		height: 88px;
 	}
 }
 		
