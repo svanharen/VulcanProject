@@ -82,25 +82,10 @@
     margin: 0 0 30px;
 }
 
-.view-buttons{
-    margin: 0px;
-    display: inline-block;
-    overflow: hidden;
-    width: 100%;
-}
-
-.view-button-list {
-    margin: 0;
-    text-align: center;
+.view-button-list{
+    margin:0;
     padding-left: 0;
-    width: 100%;
-}
-
-.view-button-list li {
-    display: inline-block;
-    vertical-align: middle;
-    padding-left: 10px;
-    padding-right: 10px;
+    text-align: center;
 }
 
 .paging {
@@ -129,6 +114,10 @@
         right:0;
     }
 
+    .container{
+        width: 740px;
+    }
+
     .caption-text{
         max-width: 960px;
     }
@@ -136,5 +125,26 @@
         font-size: 40px;
         line-height: 46px;
     }
+    .view-buttons{
+        margin: 0px;
+        display: inline-block;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .view-button-list {
+        margin: 0;
+        text-align: center;
+        padding-left: 0;
+        width: 100%;
+    }
+    
+    .view-button-list li {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+   
 }
 
