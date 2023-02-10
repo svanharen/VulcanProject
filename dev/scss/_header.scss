@@ -21,7 +21,6 @@ object {
 	display: none;
 }
 
-
 @media screen and (min-width: 768px) {
 	header {
 		background-color: transparent;
@@ -33,7 +32,7 @@ object {
 	.container {
 		width: 740px;
 	}
-	.user-bar{
+	.user-bar {
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
@@ -54,7 +53,7 @@ object {
 		text-align: right;
 	}
 
-	.user-bar-left{
+	.user-bar-left {
 		width: 50%;
 		overflow: hidden;
 		position: relative;
@@ -63,22 +62,22 @@ object {
 		text-align: left;
 	}
 
-	.desktop-alt-menu{
+	.desktop-alt-menu {
 		padding-left: 0;
 	}
 
-	.desktop-alt-menu li{
+	.desktop-alt-menu li {
 		display: inline;
 		margin-left: 10px;
 		margin-right: 10px;
 	}
-	.desktop-alt-menu li a{
+	.desktop-alt-menu li a {
 		color: white;
 		text-decoration: none;
 		text-transform: uppercase;
 	}
 
-	.header-contact{
+	.header-contact {
 		padding-left: 0;
 	}
 	.header-contact li {
@@ -86,21 +85,28 @@ object {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
-	.header-contact li a{
+	.header-contact li a {
 		color: white;
 		text-decoration: none;
 		text-transform: uppercase;
 	}
-	.vulcan-logo{
+	.vulcan-logo {
 		display: flex;
 		justify-content: space-around;
 		padding-bottom: 10px;
 	}
-	
+
+	.header-contact li i {
+		padding: 3px;
+		background-color: white;
+		border-radius: 50%;
+		font-size: 12px;
+		margin-right: 10px;
+	}
 }
 
 @media screen and (min-width: 768px) {
-	#vulcan-logo-svg{
+	#vulcan-logo-svg {
 		width: 160px;
 		height: 66px;
 	}
@@ -111,11 +117,8 @@ object {
 		width: 960px;
 	}
 
-	#vulcan-logo-svg{
+	#vulcan-logo-svg {
 		width: 213px;
 		height: 88px;
 	}
 }
-		
-
-	
