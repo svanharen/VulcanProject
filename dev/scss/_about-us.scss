@@ -11,20 +11,65 @@
 	text-align: center;
 	padding: 0;
 	padding-top: 100px;
-	padding-bottom: 50px;
+	padding-bottom: 91px;
 	color: $text-color-white;
 
 	.about-us-section-text {
 		max-width: 90%;
 		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
 		// padding: 0 32px 14px;
 
 		h2 {
-			font-size: 2em;
+			font-size: 30px;
+			line-height: 36px;
+			margin: 0 0 23px;
 		}
 		p {
-			padding: 0 32px 14px;
+			padding: 0 32px 60px;
+			line-height: 20px;
+			br {
+				display: none;
+			}
 		}
+	}
+}
 
+@media screen and (min-width: 768px) {
+	.about-us {
+		.about-us-section-text {
+			h2 {
+				font-size: 36px;
+				width: 85;
+			}
+
+			p {
+				width: 75%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.about-us {
+		.about-us-section-text {
+			padding: 0 32px 14px;
+
+			h2 {
+				width: 61%;
+			}
+
+			p {
+				font-size: 12px;
+				width: 67%;
+
+				br {
+					display: block;
+				}
+			}
+		}
 	}
 }
