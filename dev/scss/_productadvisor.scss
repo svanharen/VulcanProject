@@ -118,6 +118,10 @@
 		.form-container {
 			grid-template-columns: 1fr 1fr;
 		}
+
+		p {
+			color: $text-color-light;
+		}
 	}
 	.product-advisor:before {
 		background-size: 100% 150%;
