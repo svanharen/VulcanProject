@@ -74,7 +74,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	position: absolute;
-	text-align: center;
+	text-align: left;
 	visibility: hidden;
 	transform: scale(0);
 	width: 100%;
@@ -88,6 +88,7 @@
 	padding: 0;
 	list-style: none;
 	display: block;
+	width: 100%;
 }
 
 #main-navigation ul.header-contact {
@@ -103,7 +104,12 @@
 	width: 100%;
 	text-align: center;
 	text-transform: uppercase;
-	padding: 0px;
+	padding: 5px;
+	text-align: left;
+}
+
+#main-navigation li:hover{
+	background-color: $text-color-light;
 }
 
 #main-navigation li a {
@@ -111,6 +117,11 @@
 	color: $text-color-white;
 	font-size: 0.9rem;
 	padding-left: 10px;
+	
+}
+
+.list-holder{
+	width: 100%;
 }
 
 // #main-navigation.activated {
@@ -148,6 +159,7 @@
 	}
 	#main-navigation ul {
 		display: flex;
+		
 	}
 	.hamburger-menu {
 		display: none;
@@ -170,16 +182,16 @@
 		max-width: 1104px;
 		width: 100%;
 		margin: 0;
-		padding-top: 5px;
-		padding-bottom: 5px;
-		
 	}
 
 	#main-navigation ul li {
 		padding: 14px;
+		text-align: center;
+		
 	}
 	#main-navigation ul li a {
 		font-size: 1rem;
+		
 	}
 	
 }
